@@ -1,0 +1,284 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-17T08:28:37.115Z",
+        "before": [
+          {
+            "result": {
+              "duration": 387266000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.definitions.PlacerAIDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "PlaceAI Test Scenario",
+        "description": "",
+        "id": "this-is-a-feature-file;placeai-test-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 7508000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.definitions.PlacerAIDefinitions.afterAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1538269000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open browser",
+            "match": {
+              "location": "com.definitions.PlacerAIDefinitions.i_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 542212000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to \"https://google.com\" url using chrome browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://google.com\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.i_navigate_to_url_using_chrome_browser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58762000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "matomo added name \"google.com\" to matomo_log_action table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"google.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_added_name_to_matomo_log_action_table(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15114000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "matomo recent \"idaction\" of \"matomo_log_action\" equals \"idaction_name\" of \"matomo_log_link_visit_action\" action id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idaction\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"matomo_log_action\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"idaction_name\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"matomo_log_link_visit_action\"",
+                  "offset": 74
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_recent_of_equals_of_action_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14231000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "matomo recent \"idvisit\" of \"matomo_log_link_visit_action\" equals \"idvisit\" of \"matomo_log_visit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idvisit\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"matomo_log_link_visit_action\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"idvisit\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"matomo_log_visit\"",
+                  "offset": 78
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_recent_of_equals_of(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146978000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I close the browser",
+            "match": {
+              "location": "com.definitions.PlacerAIDefinitions.i_close_the_browser()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 581041000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I send requests to \"https://www.fox.com\" url using API call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.fox.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.i_send_requests_to_url_using_api_call(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7251000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "matomo added name \"fox.com\" to matomo_log_action table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fox.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_added_name_to_matomo_log_action_table(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12777000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "matomo recent \"idaction\" of \"matomo_log_action\" equals \"idaction_name\" of \"matomo_log_link_visit_action\" action id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idaction\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"matomo_log_action\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"idaction_name\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"matomo_log_link_visit_action\"",
+                  "offset": 74
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_recent_of_equals_of_action_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14757000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "matomo recent \"idvisit\" of \"matomo_log_link_visit_action\" equals \"idvisit\" of \"matomo_log_visit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idvisit\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"matomo_log_link_visit_action\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"idvisit\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"matomo_log_visit\"",
+                  "offset": 78
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.matomo_recent_of_equals_of(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17263000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "first visit is from \"CH\" and the second is from \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CH\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Java\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.definitions.PlacerAIDefinitions.first_visit_is_from_and_the_second_is_from(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is a feature file",
+    "description": "",
+    "id": "this-is-a-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/PlacerAITestScenario.feature",
+    "tags": []
+  }
+]
